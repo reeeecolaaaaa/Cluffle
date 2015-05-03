@@ -1,0 +1,95 @@
+#snippet1 {
+	height:58px;
+	position:fixed;
+	left:0;
+	top:60px;
+}
+#snippet2 {
+	height:58px;
+	position:fixed;
+	right:0;
+	top:60px;
+}
+#snippet3 {
+	width:197px;
+	position:fixed;
+	left:0;
+	top:118px;
+}
+#logo {
+	margin-left:30px;
+	margin-right:83px;
+}
+#searchbox {
+	left:203px;
+}
+#searchbutton {
+	left:772px;
+}
+#content {
+	position:fixed;
+	left:198px;
+	top:118px;
+	right:0;
+	bottom:0;
+	border-left:1px solid #ebebeb;
+	border-top:1px solid #ebebeb;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:5px;
+	overflow-y:auto;
+}
+#subredditlink {
+	font-size:13px;
+}
+#threadheader {
+	font-size:18px;
+}
+#threadsubheader {
+	margin-top:4px;
+	margin-bottom:8px;
+	display:inline-block;
+	font-size:13px;
+	color:#666;
+}
+.comment {
+	position:relative;
+	width:100%;
+	border-top:1px solid #ebebeb;
+	border-bottom:1px solid #ebebeb;
+	padding-top:5px;
+}
+.icon {
+	margin:5px;
+}
+.iconwrapper {
+	height:100%;
+	float:left;
+	min-height:40px;
+}
+.commentthingy {
+	text-align:right;
+}
+.commentthingywrapper {
+	float:right;
+	padding:5px;
+	height:100%;
+	min-height:40px;
+}
+.commentcontent {
+	margin:5px;
+	display:inline-block;
+	max-width:calc(100% - 250px);
+}
+.commentuser {
+	font-size:13px;
+	font-weight:700;
+}
+.commenttext {
+	display:inline-block;
+	font-size:13px;
+	margin-top:20px;
+}
+.date {
+	vertical-align:top;
+	font-size:13px;
+}
