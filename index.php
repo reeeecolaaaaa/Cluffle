@@ -585,7 +585,7 @@ function groups($request) {
 								<span class="date">
 									'.time_passed($comment["timestamp"]).'
 								</span>
-								<img class="commentthingy" src="commentthingy.png">
+								<img class="commentthingy" src="gfx/commentthingy.png">
 							</div>
 							<div class="commentcontent" style="padding-left:'.($comment["counter"]*10).'px;">
 								<div class="commentuser">

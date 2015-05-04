@@ -297,6 +297,7 @@ td:hover > a > .bottomnavtext {
 	background-size:auto 100%;
 	text-align:center;
 	text-decoration:none;
+	margin-right:3px;
 }
 #Cl2 {
 	background:url(gfx/C2.png) no-repeat;
@@ -311,6 +312,7 @@ td:hover > a > .bottomnavtext {
 	background-size:auto 100%;
 	text-align:center;
 	text-decoration:none;
+	margin-right:3px;
 }
 .u {
 	background:url(gfx/u.png) no-repeat;
@@ -342,7 +344,7 @@ td:hover > a > .bottomnavtext {
 	text-decoration:none;
 	cursor:pointer;
 	margin-bottom:10px;
-	margin-left:5px;
+	margin-left:3px;
 }
 #weiter {
 	display:block;
