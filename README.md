@@ -10,4 +10,4 @@ From now on you are able to browse reddit while at work - it will look like you 
 
 Just to let you know, because of copyright things and stuff I decided to remove some graphics before making everything public.
 
-Also, PLEASE, don't judge me by that code. Most of it was written at 3-5am. I'm not that same at that time. I coded cruel, cruel things. Unspeakable things. I'm sorry.
+Also, PLEASE, don't judge me by that code. Most of it was written at 3-5am. I'm not that sane at that time. I coded cruel, cruel things. Unspeakable things. I'm sorry.
