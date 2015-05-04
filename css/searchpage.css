@@ -214,7 +214,7 @@ a {
 	left:715px;
 	width:60px;
 	height:30px;
-	background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAAeCAYAAABwmH1PAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC41ZYUyZQAAAlZJREFUWEflmc1uElEYhufe2lIgFRZusIlXUHbiTldtAaFGQ3VZNpYmegfujMAVaGLZGrvQtlTmhwGG4fV7zyTGwImbzsHGM8mT7/fMzJvzM4txMvs/YAO7Ly/R/XQDZ6MWwxZ2X0cUPJfAHkRwJI49OBtVcSxCBM/EsQdnszqFTaxNcO7ZFIWjKYrPE5uVWNdnGhE8Eccc2/UJKp0Z+oMYQ38BfwJlP57HKs+6bpwpRHAojhm26yGO38+UyHgBuCHw9WoBTyxj5llnn268CYwKrnSmStQ0Ajr9CKXjEDvNUFnGzLPOPt14Ezibh2OYIFsfy7Kdq5ns9CIVL9eZZ70/mCO3VDeFCA7ESZ9Cc6z2qhsuUGrxYas9zHtSZx/7dT1pI4J9cdLn/osAwWQhezbGToMPW+1hnnVf+opH+p60MSa40AzUzHEGSy29GOa5ApIZXpPgrUMPJsjXPdmbyR4968l3WOI/64yZZ717Hq3UTWFMMHl8OlbLlacxxT1o+bjX8JRlzHw4A56+GyOjGW8CEeyKY4ZszZXvbKhEcya5vLlnuYwZUyzt91GMR28C7T3Sxtk6GMEk2eoIldMA3S+R2qs8yGgZP3mbHFq8LoYxym1fXkp/n7QQwT/FMU+uNkKxITQTy5j5ctvDt+tENC3j5bFpsjbBf2NZ9N6JOdEi+Eacf0+57f4W3R/MkK/p+26LCB6KczfYO3GV2LNeiFyVL6jvuw13SjDJ14YiVl9LAydzcA2bcDL7V7AJGwVfimMP1vxbIg9bIlj3D+Z/pPQqwofPPn4B8oeWdZqvTdoAAAAASUVORK5CYII=');
+	background:url('gfx/searchboxbutton.png');
 }
 #searchbox:focus {
 	border:1px solid #4285f4;
@@ -234,7 +234,7 @@ a {
 	margin-top:15px;
 	width:30px;
 	height:30px;
-	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAABTSURBVEhL7dAhDsBADAPB/P/TLTpSyYoGXJFHCllgkKmqvzyfO7SzNKSdpSHtLA1pr1V6nXaWhrSzNKSdpSHttUqv087SkHaWhrSzNKS9qm6ZeQFlno9xqSdh2wAAAABJRU5ErkJggg==');
+	background-image:url('gfx/menuicon.png');
 	opacity:0.55;
 }
 #navbarmenuicon:hover {
@@ -283,64 +283,66 @@ td:hover > a > .bottomnavtext {
 	display:block;
 	white-space:nowrap;
 	cursor:pointer;
+	vertical-align:bottom;
 }
-#G1 {
-	background:url(gfx/navlogo.png) no-repeat;
-	background-position:-24px 0;
-	width:28px;
+#Cl1 {
+	background:url(gfx/Cl.png) no-repeat;
+	width:45px;
 	height:40px;
 	display:block;
-	overflow:hidden;
 	background-attachment:scroll;
+	background-position:bottom right;
 	background-clip:border-box;
 	background-origin:padding-box;
-	background-size:auto auto;
+	background-size:auto 100%;
 	text-align:center;
 	text-decoration:none;
 }
-#G2 {
-	background:url(gfx/navlogo.png) no-repeat;
-	background-position:0 0;
+#Cl2 {
+	background:url(gfx/C2.png) no-repeat;
 	float:right;
-	width:53px;
+	width:65px;
 	height:40px;
 	display:block;
-	overflow:hidden;
 	background-attachment:scroll;
+	background-position:bottom right;
 	background-clip:border-box;
 	background-origin:padding-box;
-	background-size:auto auto;
+	background-size:auto 100%;
 	text-align:center;
 	text-decoration:none;
 }
-.o {
-	background:url(gfx/navlogo.png) no-repeat;
-	background-position:-74px 0;
+.u {
+	background:url(gfx/u.png) no-repeat;
 	width:20px;
 	height:40px;
 	display:block;
 	overflow:hidden;
 	background-attachment:scroll;
+	background-position:bottom left;
 	background-clip:border-box;
 	background-origin:padding-box;
-	background-size:auto auto;
+	background-size:100% auto;
 	text-align:center;
 	text-decoration:none;
+	margin-bottom:10px;
 }
-#gle {
-	background:url(gfx/navlogo.png) no-repeat;
-	background-position:-96px 0;
+#ffle {
+	background:url(gfx/ffle.png) no-repeat;
 	width:71px;
 	height:40px;
 	display:block;
 	overflow:hidden;
 	background-attachment:scroll;
+	background-position:bottom left;
 	background-clip:border-box;
 	background-origin:padding-box;
-	background-size:auto auto;
+	background-size:100% auto;
 	text-align:center;
 	text-decoration:none;
 	cursor:pointer;
+	margin-bottom:10px;
+	margin-left:5px;
 }
 #weiter {
 	display:block;
@@ -348,21 +350,23 @@ td:hover > a > .bottomnavtext {
 }
 #back {
 	display:block;
+	position:relative;
 	font-weight:700;
 	margin-right:35px;
+	bottom:-10px;
 	clear:right;
 }
-#cur > .o {
-	background:url(gfx/navlogo.png) no-repeat;
-	background-position:-53px 0;
+#cur > .u {
+	background:url(gfx/u2.png) no-repeat;
 	width:20px;
 	height:40px;
 	display:block;
 	overflow:hidden;
 	background-attachment:scroll;
+	background-position:bottom left;
 	background-clip:border-box;
 	background-origin:padding-box;
-	background-size:auto auto;
+	background-size:100% auto;
 	text-align:center;
 	text-decoration:none;
 }
@@ -423,7 +427,7 @@ td:hover > a > .bottomnavtext {
 	margin-top:15px;
 	width:30px;
 	height:30px;
-	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAABTSURBVEhL7dAhDsBADAPB/P/TLTpSyYoGXJFHCllgkKmqvzyfO7SzNKSdpSHtLA1pr1V6nXaWhrSzNKSdpSHttUqv087SkHaWhrSzNKS9qm6ZeQFlno9xqSdh2wAAAABJRU5ErkJggg==');
+	background-image:url('gfx/menuicon.png');
 	opacity:0.55;
 }
 #navbarmenuicon:hover {
@@ -571,6 +575,6 @@ td:hover > a > .bottomnavtext {
 	border-radius:50%;
 	width:32px;
 	height:32px;
-	background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAAA3NCSVQICAjb4U/gAAACOklEQVRIie2WX2sTQRTFz53Z3ex2W5MUFYoUtChENOCD9FHQfoJ+Q7+Ar75YEVtEWhRrsNgqKFKIJq3Nn4buutm514cotulmtsb2Qeh5HGbOb+bembNLD1cEZyl1pu7ngJPIOflUpUAEACJgPlWA1jAGn7709joJgOmid3V2cjB4CgDXxfuP+89e7SpAKQLALLy6c//uxZs3pvr9fwM4Dt68a79425ooHOqWJgBP13bjH+bOrVKa2hxsTSZCq91fWd874v5bEwW1sr7XavcHjRkHoBVqm+3AGzkn8FRts62tN9F6AoXtRqRG71ARbTciGhsAIE4YlgoQ4iTnwloBgmLoyOgwFEExdGBNSxuABXOzoTEjDYyRudmQxwcwqpWSAJmHEIEA1UrJ/qptABE4mhYXZqKEzdF9GpYo4cWFGUeTpYYAKPeDoxV6B2Z5rfn5a+RoApAauTYT3Ju/PDmhTV4o5QMAEMHRiGJudRIA5aIX+Co12aUbUn4WEYEILPB9dSXwAbCA5U+yjg/QGlqhs582d+NWN+kdmCRhAK5LYeCULriXpv3psssM5pGkbIBSEMHGVqf2odvupVqTIhx+0SJggWEJPHX7+lS1Ui54lJneGT1wNOrN+PHyN8NwNdmzTASGpZ/Kg/ns9B6+pkqh3ogePakrIs/Jccev/lNQUEurOxtbXa3zAFpj6eVO6Otc6yGFvn7++vvxTgwDjEH3IP1b94EEiGMztDbjJVvyOV/H1v7//0XngFz9BH8G8F3led9qAAAAAElFTkSuQmCC');
+	background-image:url('gfx/icon.png');
 	background-size:32px 32px;
 }

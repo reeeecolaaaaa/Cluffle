@@ -101,8 +101,8 @@ function frontpage() {
 	echo '<!DOCTYPE HTML>
 <head>
 <meta charset="utf-8">
-<title>Google</title>
-<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAN3SURBVFhHtZdpTxRBEIbnb5j4E/zgPxIQNIpHNB4hGo8Y9RPeV0g0JhtWBA8EL5QAggdEFKMkiCC3RDlcBJdju6Wtdyad7WlqekaIJE/ITtd0vdNdVV3t4W9TtdpYkBYtBencn8K0UP8T+IAv+PSdF1UtbyiozM1xxnHsvCPUkcdCnXpGPI9me83Kd+ETvj1SVG8Pujj2RKjWfqmm5qSS0s1YRqqzLfw8AL49UpLlBm223BaqsVcqIaRq6JHqQF3w7DR94cBk3unCklTXXgp/vLiKn0sD3x43YLP5llAfRgMH9d1yxfi26rCI2QWpDpIA244jkYCaLuFPnKOv30H7ztkceij8cS2iiwRzdjaxArbS183RF2HSSdp3zkbTPpgXIIh9tbydSawABJGedGLWLeBSa94WXKTfnJ1JrID0u/ykSzmpShyBted+WACCkbMziRWQehueFFHP2YEiClYzDlADODuTWAEnqciYApq/RG8D0g5pCrtpipe4NASxAvBVKChawCJtQ1k9b3uUipS2u5pg+UGsAIBlx/7ryYenpdp1N2yDotQ9HkR/FcWNOeYikQBwplmomWxexCRlRLpTqHJ6jjjBKmF1kkS+SWIBAIdKJTntHJaqb0KqfkILAjc7+Pdc/JMAmwsvwgGKasjZuViTgOtvwgJa+qQftJxtFGsSsP+B8PfdFPF+RKrSiPOCY9UCdt8L0q5jKCwAfKOAxHHMvWeTWADSDtGOU+7XfNAXTP+WanAqCEZ7JX7SWFS9MIkVgPyu+xQ0GshxZMB5Cr5Sq81CpzQ+ExYxQvUirho6BaDR6P0RTAYBqAWcnQZpihUyRVxp4201TgFNVPf1RFh+zsYGX4yKqN9r/Ow+wiMFoOPV5RdLj9Xg7DjKqB5oAW1fVyngnNGIQEgRY+NCl+3aj6sUgJquBYDDj3g7DjSx8xQzeA+pytloIgXspX5On+0A0Z90FbR41Ahu3MQdhHQP0ALAK9pPO/1skI4ZWn7UhyQVEQIy9kMN+j+z0wWzVIQQ2ZcpveAMAYdlRrq10Y0J8fJ6QLLXMYYM3YxEihkIgVOv53tQ/UwxJtnFwPGJBn4ODvj2ilPZ9YWVuTHOwAbluLxJqBvt1C1TX4DagM73+NNgtbh3HIzCt39DLkktryMRFXRtHqL/mf8JfNCdsAI+Pc/z/gLM/qSASCHNiAAAAABJRU5ErkJggg==" />
+<title>Cluffle</title>
+<link rel="shortcut icon" href="gfx/faviconsmall.png" />
 <style>';
 require("css/frontpage.css");
 echo '</style>
@@ -132,16 +132,15 @@ body {
 	<h2>Help</h2>
 	<div class="closebutton">Close</div>
 	<p>
-		You can support this project by helping me fund it. The costs to keep it alive (paying for the hosting / paying for energy drinks) are relatively high for a college student like me.<br><br><br>
-		PayPal - send me a message on Reddit for my mail adress (unfortunately I couldn\'t make a donate button - need to be an organization for that)<br><br>
-		BTC - 1BWvVmUh3FemK25jStSK8qJVGHR5YRhp9c
+		
 	</p>
 </div>
-<div id="business" class="popup" style="display:none;">
-	<h2>Business</h2>
+<div id="opensource" class="popup" style="display:none;">
+	<h2>Open source</h2>
 	<div class="closebutton">Close</div>
 	<p>
-		Interested in buying this project? Message me on Reddit.
+		The whole project is completely open source and available at <a href="http://www.github.com/Lutron/Cluffle">Github</a>.<br>
+		If you want to help improving the messy project (it\'s based on PHP), feel free to make a pull request. I\'ll also list everyone helping here.
 	</p>
 </div>
 <div id="about" class="popup" style="display:none;">
@@ -176,8 +175,8 @@ body {
 	</form>
 </div>
 <div class="noselect" id="footer">
-	<a div="help">Help</a>
-	<a div="business">Business</a>
+	<a div="opensource">Help</a>
+	<a div="opensource">Open Source</a>
 	<a div="about">About</a>
 
 	<span id="footerright">
@@ -535,8 +534,8 @@ function groups($request) {
 		<!DOCTYPE HTML>
 		<head>
 			<meta charset="utf-8">
-			<title>Google Groups</title>
-			<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAN3SURBVFhHtZdpTxRBEIbnb5j4E/zgPxIQNIpHNB4hGo8Y9RPeV0g0JhtWBA8EL5QAggdEFKMkiCC3RDlcBJdju6Wtdyad7WlqekaIJE/ITtd0vdNdVV3t4W9TtdpYkBYtBencn8K0UP8T+IAv+PSdF1UtbyiozM1xxnHsvCPUkcdCnXpGPI9me83Kd+ETvj1SVG8Pujj2RKjWfqmm5qSS0s1YRqqzLfw8AL49UpLlBm223BaqsVcqIaRq6JHqQF3w7DR94cBk3unCklTXXgp/vLiKn0sD3x43YLP5llAfRgMH9d1yxfi26rCI2QWpDpIA244jkYCaLuFPnKOv30H7ztkceij8cS2iiwRzdjaxArbS183RF2HSSdp3zkbTPpgXIIh9tbydSawABJGedGLWLeBSa94WXKTfnJ1JrID0u/ykSzmpShyBted+WACCkbMziRWQehueFFHP2YEiClYzDlADODuTWAEnqciYApq/RG8D0g5pCrtpipe4NASxAvBVKChawCJtQ1k9b3uUipS2u5pg+UGsAIBlx/7ryYenpdp1N2yDotQ9HkR/FcWNOeYikQBwplmomWxexCRlRLpTqHJ6jjjBKmF1kkS+SWIBAIdKJTntHJaqb0KqfkILAjc7+Pdc/JMAmwsvwgGKasjZuViTgOtvwgJa+qQftJxtFGsSsP+B8PfdFPF+RKrSiPOCY9UCdt8L0q5jKCwAfKOAxHHMvWeTWADSDtGOU+7XfNAXTP+WanAqCEZ7JX7SWFS9MIkVgPyu+xQ0GshxZMB5Cr5Sq81CpzQ+ExYxQvUirho6BaDR6P0RTAYBqAWcnQZpihUyRVxp4201TgFNVPf1RFh+zsYGX4yKqN9r/Ow+wiMFoOPV5RdLj9Xg7DjKqB5oAW1fVyngnNGIQEgRY+NCl+3aj6sUgJquBYDDj3g7DjSx8xQzeA+pytloIgXspX5On+0A0Z90FbR41Ahu3MQdhHQP0ALAK9pPO/1skI4ZWn7UhyQVEQIy9kMN+j+z0wWzVIQQ2ZcpveAMAYdlRrq10Y0J8fJ6QLLXMYYM3YxEihkIgVOv53tQ/UwxJtnFwPGJBn4ODvj2ilPZ9YWVuTHOwAbluLxJqBvt1C1TX4DagM73+NNgtbh3HIzCt39DLkktryMRFXRtHqL/mf8JfNCdsAI+Pc/z/gLM/qSASCHNiAAAAABJRU5ErkJggg==" />
+			<title>Cluffle Groups</title>
+			<link rel="shortcut icon" href="gfx/faviconsmall.png" />
 			<style>';
 			require("css/searchpage.css");
 			echo '</style>
@@ -580,13 +579,13 @@ function groups($request) {
 				foreach ($comments["comments"] as $comment) {
 					echo '<div class="comment">
 							<div class="iconwrapper">
-								<img class="icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAnUlEQVR42u3UsQ2AIBAFUOemoKGESajYhA3oWABCfeabUKiFNijRX3xDzkt4ILLknGWGLHi01l4NIYQQQsirkFKKhBDEGLMFY9Qeh2BipdQuqD0OwS4cIaj9FzLNp5nmsPIe6am1SoxRvPfinBOt9RaMUcM79AyFpJTEWns6pMegB73DIFj1FaIHvcMgdxE934fw9yWEEEIIuQuZISuz4exV/fiHnwAAAABJRU5ErkJggg==">
+								<img class="icon" src="gfx/icon.png">
 							</div>
 							<div class="commentthingywrapper">
 								<span class="date">
 									'.time_passed($comment["timestamp"]).'
 								</span>
-								<img class="commentthingy" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAAAdCAYAAAANW/o+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAIDSURBVGhD7Zk7b8JAEIT9F+mpaWkRNZRQQ0tNC/wQKHgJWpAoeDa4uGhWWusczmYX7hKcuPg82vPeRjceSwSi+/1u1uu1mc/nJQ7gDTyKttutOR6P5na7FR4cyrX+DvAGHkUhhv8Woc6CuWTU9XqlhaLrarUS92oUcyNcpBs+XTlRkl6NUqL4KfwFQp2lTJRQy0QJSRLlullEght1uVxowad2u93cOoQul0txr0YxN8JFukGqMKVSqWTWoZQTJenVaJBEDQYDMmUymaRqkLfPhxYmUTAHhvT7/VTNtNttMxwO6V+CvDmvatBE8VN4l/F4TGa0Wq1UnQVeRzbMF8/O0mg0MnH1M0miXDe1sAF8eNuULKrVqpnNZg+zXkVyFq1JIDHqfD7TwjtqJ8qunwGzptOp+O/k6WKxEPXaJkn6MddbogCb0+v1UjXTbDaJWq2WWkf9fdYraM4iSRLjNVGsbA4UNUxjQ+y+/X5vRqNRYhr3P5ufp9JEaZUShYt0g1T5c1NWbetut6PXtV6vO+9rlBMl6dUoJYqfgm86nU5ubQOzkCzXPQ2hzpIkynXzp8Fr6FrX8C+M8kFplJDgRp1OJ1oouuLnJWmvRjE3wkW64dOVEyXp1Sglip/CXyDUWcpECZUSha8QDocDLRadEImCN/Q1SxzHZrPZ0C8NJY/AmziOzRf/I1Cj9JGkuwAAAABJRU5ErkJggg==">
+								<img class="commentthingy" src="commentthingy.png">
 							</div>
 							<div class="commentcontent" style="padding-left:'.($comment["counter"]*10).'px;">
 								<div class="commentuser">
@@ -743,8 +742,8 @@ function searchpage($d) {
 		<!DOCTYPE HTML>
 		<head>
 			<meta charset="utf-8">
-			<title>'.$d["query"].' - Google Search</title>
-			<link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAYdEVYdFNvZnR3YXJlAHBhaW50Lm5ldCA0LjAuNWWFMmUAAAN3SURBVFhHtZdpTxRBEIbnb5j4E/zgPxIQNIpHNB4hGo8Y9RPeV0g0JhtWBA8EL5QAggdEFKMkiCC3RDlcBJdju6Wtdyad7WlqekaIJE/ITtd0vdNdVV3t4W9TtdpYkBYtBencn8K0UP8T+IAv+PSdF1UtbyiozM1xxnHsvCPUkcdCnXpGPI9me83Kd+ETvj1SVG8Pujj2RKjWfqmm5qSS0s1YRqqzLfw8AL49UpLlBm223BaqsVcqIaRq6JHqQF3w7DR94cBk3unCklTXXgp/vLiKn0sD3x43YLP5llAfRgMH9d1yxfi26rCI2QWpDpIA244jkYCaLuFPnKOv30H7ztkceij8cS2iiwRzdjaxArbS183RF2HSSdp3zkbTPpgXIIh9tbydSawABJGedGLWLeBSa94WXKTfnJ1JrID0u/ykSzmpShyBted+WACCkbMziRWQehueFFHP2YEiClYzDlADODuTWAEnqciYApq/RG8D0g5pCrtpipe4NASxAvBVKChawCJtQ1k9b3uUipS2u5pg+UGsAIBlx/7ryYenpdp1N2yDotQ9HkR/FcWNOeYikQBwplmomWxexCRlRLpTqHJ6jjjBKmF1kkS+SWIBAIdKJTntHJaqb0KqfkILAjc7+Pdc/JMAmwsvwgGKasjZuViTgOtvwgJa+qQftJxtFGsSsP+B8PfdFPF+RKrSiPOCY9UCdt8L0q5jKCwAfKOAxHHMvWeTWADSDtGOU+7XfNAXTP+WanAqCEZ7JX7SWFS9MIkVgPyu+xQ0GshxZMB5Cr5Sq81CpzQ+ExYxQvUirho6BaDR6P0RTAYBqAWcnQZpihUyRVxp4201TgFNVPf1RFh+zsYGX4yKqN9r/Ow+wiMFoOPV5RdLj9Xg7DjKqB5oAW1fVyngnNGIQEgRY+NCl+3aj6sUgJquBYDDj3g7DjSx8xQzeA+pytloIgXspX5On+0A0Z90FbR41Ahu3MQdhHQP0ALAK9pPO/1skI4ZWn7UhyQVEQIy9kMN+j+z0wWzVIQQ2ZcpveAMAYdlRrq10Y0J8fJ6QLLXMYYM3YxEihkIgVOv53tQ/UwxJtnFwPGJBn4ODvj2ilPZ9YWVuTHOwAbluLxJqBvt1C1TX4DagM73+NNgtbh3HIzCt39DLkktryMRFXRtHqL/mf8JfNCdsAI+Pc/z/gLM/qSASCHNiAAAAABJRU5ErkJggg==" />
+			<title>'.$d["query"].' - Cluffle Search</title>
+			<link rel="shortcut icon" href="gfx/faviconsmall.png" />
 			<style>';
 			require("css/searchpage.css");
 			echo '</style>
@@ -819,7 +818,7 @@ function searchpage($d) {
 						Wiki
 					</div>
 				</a>
-				<img id="cog" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAcCAYAAADcO8kVAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAABh0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC41ZYUyZQAAAyhJREFUWEftmMsva1EUh/2LWtQ71QgxUGUgIq1IhCDCBANFIkW1QeIdIQbVNJFgYEIi8X4Tr7bj381v5Z6jZd9Zz9bknsF3Jpal+7Me+7QglUrh8vLS5i9XV1egk4Kbmxuk02mbDK6vr20xKmwx/0DE8MGesvmCc+bXxfBDbG5uYm5uTlheXsbJyYkyVhd5IWZvbw/Nzc0oLCwU6urqsL6+jmQyqYzXgXYxn5+feHx8BOfa29sb7u7uEIlEUFNTY4qpqqrC2NiYrM7393eJub+/x8fHhzKnFWgXw7+1sLCA4eFhTE9Pi4CmpiYUFRWZYpxOJxoaGiRmZmYGo6OjCIfDOD09Vea0Aq1iWCE7Ozuor6+Xw5eWlsLlcplCvlNSUiIxlObxeLC4uKitarSKYWsMDAzA4XBkCaisrERnZydCoZBUSF9fH9xud1YMf4cxbClV7lwjYvjgoLMaihkaGpJKyJQyODiIo6MjvL6+SlVxIwWDwSw5xcXF6OrqEjGq3LmGn1WbGB58f39fKsKomra2NhwcHPyIPT4+Rnd3tymmo6MDu7u7Moy/x1qBVjGEFbGxsWEO2/7+fry8vCjjJicnTTETExN4eHj4EWcV2sVQwsrKiimG1aM6MOPGx8clhtXF1uLa/h5nFVrF8LDcSu3t7WYr8WIXi8Vk2xhxvOscHh7C7/ebFdPS0oLV1VVpx8ycVqFVzNnZGXp7e2WQGgfmOua24fx4enrC8/OzzBxur4qKCjOOFRYIBHB7e6vMnWtEDB/8L1kNrwUjIyNyhzEObMhh5VAaZ05ra2uWFMIK6+npkbZT5c41FxcX+sRwoMbjcTQ2NkoFlJWVCZkCMuHlr7y8XGJ5KWQrcSupcucarWIIB+j29rZc8flGPT8/Lys7s70owufzYXZ2FltbW4hGo/JSeX5+rsxpBdrFcMhyjrAlWEF8oVxaWkJtba0pprq6GlNTUzJPWCGM4fzRVS1EuxgViUQCXq/XFGN87aCK1UVeiOG2Wltbk9YhrCDefFWxusgLMfmIiOGDvW/zBQe9LUaBiGErqX74v8LtJ61kfDFj80UymcQflewslOkqy/kAAAAASUVORK5CYII=">
+				<img id="cog" src="gfx/cog.png">
 			</div>
 			<div id="navbar3">
 				<div id="resultstats">
@@ -871,14 +870,14 @@ function searchpage($d) {
 					//Kein Zurück
 					$back='
 					<td>
-						<span id="G1"></span>
+						<span id="Cl1"></span>
 					</td>
 					';
 				} else {
 					$back='
 					<td>
 						<a href="'.$d["backlink"].$sublink.'">
-							<span id="G2"></span><span id="back">Previous</span>
+							<span id="Cl2"></span><span id="back">Previous</span>
 						</a>
 					</td>
 					';
@@ -890,28 +889,28 @@ function searchpage($d) {
 				foreach ($d["pagelinks"] as $page) {
 					if ($toggle==0 && $page["current"]==1) {
 						$pagenumbers.='<td id="cur">
-									<span class="o"></span><span class="bottomnavtext">'.$page["number"].'</span>
+									<span class="u"></span><span class="bottomnavtext">'.$page["number"].'</span>
 								</td>';
 						$toggle=1;
 					} else if ($toggle==0) {
 						$pagenumbers.='<td>
-									<a href="'.$page["link"].$sublink.'"><span class="o"></span><span class="bottomnavtext">'.$page["number"].'</span></a>
+									<a href="'.$page["link"].$sublink.'"><span class="u"></span><span class="bottomnavtext">'.$page["number"].'</span></a>
 								</td>';
 					} else {
 						$pagenumbers.='<td>
-									<a href="'.$page["link"].$sublink.'"><span class="o"></span><span class="bottomnavtext">'.$page["number"].'</span></a>
+									<a href="'.$page["link"].$sublink.'"><span class="u"></span><span class="bottomnavtext">'.$page["number"].'</span></a>
 								</td>';
 					}
 				}
 				
 				if ($d["forward"]) {
 					$next='<td>
-								<a href="'.$d["forwardlink"].$sublink.'"><span id="gle"></span><span id="weiter" style="font-weight:700;">Next</span></a>
+								<a href="'.$d["forwardlink"].$sublink.'"><span id="ffle"></span><span id="weiter" style="font-weight:700;">Next</span></a>
 							</td>
 							';
 				} else {
 					$next='<td>
-								<span id="gle" style="cursor:default; width:62px;"></span>
+								<span id="ffle" style="cursor:default; width:62px;"></span>
 							</td>
 							';
 				}
@@ -935,8 +934,8 @@ function searchpage($d) {
 				echo '
 			</div>
 			<div id="footer">
-				<a div="help" style="margin-left:135px;">Help</a>
-				<a div="business">Business</a>
+				<a div="opensource" style="margin-left:135px;">Help</a>
+				<a div="opensource">Open Source</a>
 				<a div="about">About</a>
 				<a target=_blank href="http://www.reddit.com/user/Lutan">Contact</a>
 				'.$d["proxyquery"].'
@@ -945,16 +944,15 @@ function searchpage($d) {
 	<h2>Help</h2>
 	<div class="closebutton">Close</div>
 	<p>
-		You can support this project by helping me fund it. The costs to keep it alive (paying for the hosting / paying for energy drinks) are relatively high for a college student like me.<br><br><br>
-		PayPal - send me a message on Reddit for my mail adress (unfortunately I couldn\'t make a donate button - need to be an organization for that)<br><br>
-		BTC - 1BWvVmUh3FemK25jStSK8qJVGHR5YRhp9c
+		
 	</p>
 </div>
-<div id="business" class="popup" style="display:none;">
-	<h2>Business</h2>
+<div id="opensource" class="popup" style="display:none;">
+	<h2>Open Source</h2>
 	<div class="closebutton">Close</div>
 	<p>
-		Interested in buying this project? Message me on Reddit.
+		The whole project is completely open source and available at <a href="http://www.github.com/Lutron/Cluffle">Github</a>.<br>
+		If you want to help improving the messy project (it\'s based on PHP), feel free to make a pull request. I\'ll also list everyone helping here.
 	</p>
 </div>
 <div id="about" class="popup" style="display:none;">
