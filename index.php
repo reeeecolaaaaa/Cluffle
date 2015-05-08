@@ -163,14 +163,12 @@ body {
 <div id="content">
 	<div id="contentlogo">
 	</div>
-	<form id="luckyform" action="index.php">
-		<input type="hidden" name="q" value="/r/random">
-	</form>
 	<form action="index.php">
+		<input type="hidden" name="enableproxy" value="true">
 		<input type="text" id="contentinput" autofocus name="q" autocomplete="off">
 		<div class="noselect" id="contentbuttons">
 			<button type=submit id="contentbutton1"></button>
-			<a id="contentbutton2" href="index.php?q=/r/random"></a>
+			<a id="contentbutton2" href="index.php?q=/r/random&enableproxy=true"></a>
 		</div>
 	</form>
 </div>
@@ -307,7 +305,7 @@ function search($request) {
 			$result["strLink"]="index.php?action=groups&comment=".$buffer;
 		} else {
 			require_once("proxy.inc.php");
-			$whitelist=array("imgur.com","reddit.com");
+			$whitelist=array("imgur.com","reddit.com","puu.sh","gfycat.com");
 			$proxy=new proxy();
 			$parse=$proxy->parseUrl($entry->data->url,$whitelist);
 			$parse=in_array($parse[2],$whitelist);
