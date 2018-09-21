@@ -3,4 +3,4 @@
 
 # Notice
 
-<a href="https://github.com/Lutron/Cluffle">Cluffle</>, but rewritten in JavaScript... so shouts out <a href="https://github.com/Lutron/Cluffle">Cluffle</> (R.I.P. though)
+<a href="https://github.com/Lutron/Cluffle">Cluffle</a>, but rewritten in JavaScript... so shouts out <a href="https://github.com/Lutron/Cluffle">Cluffle</a> (R.I.P. though)
